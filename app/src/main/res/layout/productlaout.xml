@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textDirection="rtl">
+
+        <ImageView
+            android:id="@+id/imageViewimage"
+            android:layout_width="138dp"
+            android:layout_height="134dp"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@mipmap/allphar" />
+
+        <TextView
+            android:id="@+id/openclose"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namephart"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="10dp"
+            android:text="السعر :"
+            android:textColor="#dd000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/swamtext"
+            android:layout_toStartOf="@+id/swamtext"
+            android:text="بلد التصنيع"
+            android:textColor="#dd000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/openclose"
+            android:layout_alignStart="@+id/textView17"
+            android:text="دل"
+            android:textColor="#dd000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/openclose"
+            android:layout_toStartOf="@+id/openclose"
+            android:text="10"
+            android:textColor="#dd000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewelmy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/openclose"
+            android:layout_marginEnd="65dp"
+            android:layout_marginBottom="42dp"
+            android:layout_toStartOf="@+id/openclose"
+            android:textColor="#dd000000"
+            android:textDirection="rtl"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/swamtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/openclose"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="147dp"
+            android:layout_marginEnd="-3dp"
+            android:text="بلد التصنيع : "
+            android:textColor="#dd000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="22dp"
+            android:text=" اسم المنتج :"
+            android:textColor="#dd000000"
+            android:textDirection="rtl"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewelmyn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="74dp"
+            android:layout_marginEnd="22dp"
+            android:text=" الاسم العلمي :"
+            android:textColor="#dd000000"
+            android:textDirection="rtl"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/namephart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textView17"
+            android:layout_marginEnd="57dp"
+            android:text="اسم @string/المنتجات"
+            android:textColor="#dd000000"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

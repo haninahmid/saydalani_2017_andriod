@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Productbpackage.TypeProdunct">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+
+
+        <Button
+            android:id="@+id/buttonmen"
+            android:layout_width="183dp"
+            android:layout_height="170dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="16dp"
+            android:background="@mipmap/men" />
+
+        <Button
+            android:id="@+id/buttonmachin"
+            android:layout_width="174dp"
+            android:layout_height="151dp"
+            android:layout_alignBottom="@+id/buttonanother"
+            android:layout_alignEnd="@+id/buttonwomen"
+            android:background="@mipmap/medcinee" />
+
+        <Button
+            android:id="@+id/buttonwomen"
+            android:layout_width="185dp"
+            android:layout_height="172dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="14dp"
+            android:background="@mipmap/women" />
+
+        <Button
+            android:id="@+id/buttonmedcine"
+            android:layout_width="181dp"
+            android:layout_height="164dp"
+            android:layout_alignEnd="@+id/buttonmen"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/medcine" />
+
+        <Button
+            android:id="@+id/buttonanother"
+            android:layout_width="185dp"
+            android:layout_height="156dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView13"
+            android:layout_marginBottom="40dp"
+            android:layout_marginStart="-21dp"
+            android:background="@mipmap/anotherxx" />
+
+        <Button
+            android:id="@+id/buttonchildrent"
+            android:layout_width="178dp"
+            android:layout_height="167dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="220dp"
+            android:background="@mipmap/baby" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/textView22"
+            android:layout_marginStart="38dp"
+            android:text="منتجات رجالية"
+            android:textColor="#dd000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonmachin"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="62dp"
+            android:text="ادوية"
+            android:textColor="#dd000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView20"
+            android:layout_below="@+id/buttonmachin"
+            android:text="اخرى"
+            android:textColor="#dd000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/buttonanother"
+            android:layout_marginEnd="58dp"
+            android:layout_marginTop="-40dp"
+            android:text="الات"
+            android:textColor="#dd000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="198dp"
+            android:layout_marginEnd="68dp"
+            android:text="اطفال"
+            android:textColor="#dd000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="177dp"
+            android:layout_toEndOf="@+id/buttonmen"
+            android:text="منتجات نسائية"
+            android:textColor="#dd000000"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

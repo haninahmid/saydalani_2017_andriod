@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textDirection="rtl"
+        tools:layout_editor_absoluteX="357dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textViewaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="104dp"
+            android:text="TextView"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textDirection="rtl"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="322dp"
+            tools:layout_editor_absoluteY="103dp" />
+
+        <ImageView
+            android:id="@+id/imagepharim"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@mipmap/allphar" />
+
+
+        <ImageView
+            android:id="@+id/moonpharimage"
+            android:layout_width="41dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="62dp" />
+
+        <ImageView
+            android:id="@+id/sunpharimage"
+            android:layout_width="41dp"
+            android:layout_height="37dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="60dp"
+            app:srcCompat="@mipmap/sun" />
+
+        <TextView
+            android:id="@+id/openclose"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namephart"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="32dp"
+            android:text="مفتوحة"
+            android:textColor="#dd000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/onofimage"
+            android:layout_width="33dp"
+            android:layout_height="28dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="67dp"
+            android:background="@mipmap/ic_launcher_foregroundred" />
+
+
+        <TextView
+            android:id="@+id/swamtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/openclose"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="101dp"
+            android:layout_marginEnd="107dp"
+            android:text="دوام عادي"
+            android:textColor="#dd000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="22dp"
+            android:text="اسم الصيدلية :"
+            android:textColor="#dd000000"
+            android:textDirection="rtl"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/namephart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView17"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-25dp"
+            android:layout_marginEnd="163dp"
+            android:text="name"
+            android:textColor="#dd000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/idpharim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView17"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="37dp"
+            android:textColor="#dd000000"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

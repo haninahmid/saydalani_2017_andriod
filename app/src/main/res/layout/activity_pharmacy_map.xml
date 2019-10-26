@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/buttonhome2"
+        android:layout_width="57dp"
+        android:layout_height="59dp"
+        android:layout_alignStart="@+id/textviewpay"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/home" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        tools:context=".phrmacy.pharmacyMap">
+
+
+    </fragment>
+
+    <TextView
+        android:id="@+id/textpharname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView10"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="143dp"
+        android:text="الاسم"
+        android:textColor="#dd000000"
+        android:textDirection="rtl"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/textView10"
+        android:layout_alignEnd="@+id/imageViewsun"
+        android:text=" الصيدلية : "
+        android:textColor="#dd000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView11"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="138dp"
+        android:text=" العنوان : "
+        android:textColor="#dd000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonproductss"
+        android:layout_alignEnd="@+id/textView12"
+        android:text="طريقة الدفع : "
+        android:textColor="#dd000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView9"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="221dp"
+        android:text="الاميل : "
+        android:textColor="#dd000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textviewpay"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_toStartOf="@+id/textView11"
+        android:text="لا يوجد"
+        android:textColor="#dd000000"
+        android:textDirection="rtl"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textviewemail"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="56dp"
+        android:text="لايوجد"
+        android:textColor="#dd000000"
+        android:textDirection="rtl"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonfacebook"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="249dp"
+        android:layout_toEndOf="@+id/buttonweb"
+        android:background="@mipmap/facebookyes" />
+
+    <Button
+        android:id="@+id/buttonweb"
+        android:layout_width="54dp"
+        android:layout_height="63dp"
+        android:layout_alignTop="@+id/buttoncall"
+        android:layout_toEndOf="@+id/buttoncall"
+        android:background="@mipmap/wenyes" />
+
+    <Button
+        android:id="@+id/buttoncall"
+        android:layout_width="61dp"
+        android:layout_height="63dp"
+        android:layout_alignStart="@+id/textviewpay"
+        android:layout_alignBottom="@+id/buttonfacebook"
+        android:background="@mipmap/phonegreen" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="168dp"
+        android:layout_height="84dp"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_toStartOf="@+id/textView9"
+        android:fillViewport="true"
+        android:textDirection="rtl">
+
+        <LinearLayout
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textDirection="rtl">
+
+            <TextView
+                android:id="@+id/textViewaddress"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:text="لا يوجد"
+                android:textColor="#dd000000"
+                android:textDirection="rtl"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/buttonproductss"
+        android:layout_width="124dp"
+        android:layout_height="102dp"
+
+        android:layout_alignStart="@+id/textviewpay"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="79dp"
+        android:background="@mipmap/product" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="57dp"
+        android:text="@string/المنتجات"
+        android:textColor="#dd000000"
+        android:textSize="24sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_alignTop="@+id/textView14"
+        android:layout_alignEnd="@+id/textView10"
+        android:progressTint="#FFFDE801"
+        android:progressTintMode="src_atop"
+        android:secondaryProgressTint="#FFFDE801" />
+
+    <ImageView
+        android:id="@+id/imageViewsun"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/imageViewmoon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="17dp"
+        app:srcCompat="@mipmap/sun" />
+
+    <ImageView
+        android:id="@+id/imageViewmoon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_alignTop="@+id/buttonfacebook" />
+
+    <TextView
+        android:id="@+id/textViewOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_centerVertical="true"
+        android:text="open"
+        android:textColor="#dd000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewDwam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewsun"
+        android:layout_toStartOf="@+id/textView9"
+        android:text="دوام عادي"
+        android:textColor="#dd000000"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageViewOpen"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/imageViewsun"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

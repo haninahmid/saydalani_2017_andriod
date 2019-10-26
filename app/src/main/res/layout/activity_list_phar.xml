@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".phrmacy.ListPharActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <ListView
+            android:id="@+id/list_prov"
+            android:layout_width="match_parent"
+            android:layout_height="418dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:dividerHeight="8dp" />
+
+        <Button
+            android:id="@+id/buttonserch"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="50dp"
+            android:background="@android:drawable/ic_search_category_default"
+            android:textDirection="rtl" />
+
+        <Button
+            android:id="@+id/buttonreturn"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="50dp"
+            android:background="@android:drawable/ic_menu_rotate"
+            android:textDirection="rtl" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:ems="10"
+            android:hint="  اسم الصيدلية"
+            android:inputType="textPersonName"
+            android:textDirection="rtl" />
+
+        <EditText
+            android:id="@+id/editTextaddress"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:hint="   العنوان"
+            android:inputType="textPersonName"
+            android:textDirection="rtl" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="100dp"
+            android:background="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/buttonhome5"
+            android:layout_width="57dp"
+            android:layout_height="59dp"
+            android:layout_alignStart="@+id/list_prov"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="11dp"
+            android:background="@mipmap/home" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

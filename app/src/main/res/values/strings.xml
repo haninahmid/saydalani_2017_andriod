@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">saydalani</string>
+    <string name="المنتجات">المنتجات</string>
+    <string name="title_activity_pharmacy_map">Map</string>
+    <string name="adresstext">العنوان :</string>
+    <string name="paytext">طريقة الدفع :</string>
+    <string name="title_activity_maps">Map</string>
+    <string-array name="country_arrays">
+        <item>ادوية</item>
+        <item>اطفال</item>
+        <item>الات</item>
+        <item>منتجات نسائية</item>
+        <item>منتجات رجالية</item>
+        <item>اخرى</item>
+    </string-array>
+</resources>

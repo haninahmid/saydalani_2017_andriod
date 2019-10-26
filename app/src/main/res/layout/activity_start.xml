@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="235dp"
+            android:layout_height="237dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="57dp"
+            android:background="@mipmap/icon" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="220dp"
+            android:text="اهلا بكم في تطبيق صيدلاني ابدا"
+            android:textColor="@android:color/background_dark"
+            android:textColorLink="@color/colorPrimaryDark"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="174dp"
+            android:text="          وصيدل الان"
+            android:textColor="@android:color/background_dark"
+            android:textColorLink="@color/colorPrimaryDark"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="126dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="78dp"
+            android:background="@color/colorPrimary"
+            android:text="صيدل"
+            android:textColor="?attr/colorBackgroundFloating"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".searchProductActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textDirection="rtl">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/editTextN"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:entries="@array/country_arrays" />
+
+                        <EditText
+                            android:id="@+id/editTextN"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="22dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="   اسم المنتج"
+                            android:inputType="textPersonName" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/editTextcountry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="بلد التصنيع"
+                            android:inputType="textPersonName" />
+
+                        <EditText
+                            android:id="@+id/editTextmontgelmy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="اسم المنتج العلمي"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/editTextadd"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="70dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="العنوان"
+                            android:inputType="textPersonName"
+                            android:textDirection="rtl" />
+
+                        <Switch
+                            android:id="@+id/switch4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:text="  الصيدليات المفتوحة " />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/button9"
+                            android:layout_width="match_parent"
+                            android:layout_height="4dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/colorPrimary" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:background="@android:drawable/ic_search_category_default" />
+
+        <ListView
+            android:id="@+id/listsearchpro"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentBottom="false"
+            android:layout_marginTop="170dp"
+            android:dividerHeight="10dp"
+            android:paddingTop="10dp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="179dp"
+        android:layout_height="163dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="18dp"
+        android:background="@mipmap/ic_launcherstars" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="36dp"
+        android:text="افضل 5 صيدليات"
+        android:textColor="#89000000"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="171dp"
+        android:layout_height="147dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:background="@mipmap/product" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button2"
+        android:layout_below="@+id/button3"
+        android:text="البحث عن منتج"
+        android:textColor="#89000000"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonphar"
+        android:layout_width="174dp"
+        android:layout_height="148dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/button3"
+        android:layout_marginTop="215dp"
+        android:background="@mipmap/allphar" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/buttonphar"
+        android:layout_marginEnd="53dp"
+        android:text="الصيدليات"
+        android:textColor="#89000000"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonNight"
+        android:layout_width="174dp"
+        android:layout_height="166dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/buttonphar"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="-10dp"
+        android:background="@mipmap/ic_launchernighticon" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttonNight"
+        android:layout_below="@+id/buttonphar"
+        android:text="صديليات بدوام ليلي"
+        android:textColor="#89000000"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonOpen"
+        android:layout_width="182dp"
+        android:layout_height="163dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginStart="-25dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:background="@mipmap/ic_launcheropen" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/buttonOpen"
+        android:layout_marginEnd="82dp"
+        android:text="الصيدليات المفتوحة حاليا"
+        android:textColor="#89000000"
+        android:textSize="25sp" />
+
+</RelativeLayout>
+

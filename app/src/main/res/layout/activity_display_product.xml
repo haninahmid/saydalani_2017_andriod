@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Productbpackage.DisplayProduct">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textDirection="rtl">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageViewPpicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="158dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@android:drawable/sym_def_app_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:textDirection="rtl">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:textDirection="rtl">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/textView27"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:text="TextView"
+                            android:textColor="#dd000000"
+                            android:textDirection="rtl"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/textView16"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="30dp"
+                            android:text="اسم المنتج : "
+                            android:textColor="#dd000000"
+                            android:textDirection="rtl"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewCounty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/textViewName"
+                            android:layout_alignBottom="@+id/textView16"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:text="TextView"
+                            android:textColor="#dd000000"
+                            android:textDirection="rtl"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/textView26"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="30dp"
+                            android:layout_weight="1"
+                            android:text="بلد التصنيع :"
+                            android:textColor="#dd000000"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/textView33"
+                            android:layout_marginRight="10dp"
+                            android:layout_toStartOf="@+id/textView30"
+                            android:layout_weight="1"
+                            android:text="TextView"
+                            android:textColor="#dd000000"
+                            android:textDirection="rtl"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/textView16"
+                            android:layout_alignParentBottom="true"
+                            android:layout_weight="1"
+                            android:text="الكمية :"
+                            android:textColor="#dd000000"
+                            android:textDirection="rtl"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:textDirection="rtl">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:text="د ل"
+                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/textViewpriceprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/textViewCounty"
+                            android:layout_alignBottom="@+id/textView26"
+                            android:layout_marginRight="10dp"
+                            android:text="40"
+                            android:textColor="#dd000000"
+                            android:textDirection="rtl"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="30dp"
+                            android:text="سعر المنتج :"
+                            android:textColor="#dd000000"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewtype"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/textView34"
+                            android:layout_toStartOf="@+id/textView16"
+                            android:layout_weight="1"
+                            android:text="النوع"
+                            android:textColor="#dd000000"
+                            android:textDirection="rtl"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/textView16"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="30dp"
+                            android:layout_weight="1"
+                            android:text="نوع المنتج :"
+                            android:textColor="#dd000000"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewEdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView28"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="2019-20-20"
+                        android:textColor="#dd000000"
+                        android:textDirection="rtl"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/textView30"
+                        android:layout_alignParentStart="true"
+                        android:layout_weight="1"
+                        android:text="ت الانتهاء"
+                        android:textColor="#dd000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textViewBdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView28"
+                        android:layout_marginRight="5dp"
+                        android:layout_toStartOf="@+id/textView32"
+                        android:layout_weight="1"
+                        android:text="1997-01-02"
+                        android:textColor="#dd000000"
+                        android:textDirection="rtl"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/textView16"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="30dp"
+                        android:text="ت الانتاج"
+                        android:textColor="#dd000000"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewCmade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView31"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textColor="#dd000000"
+                        android:textDirection="rtl"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/textView16"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="30dp"
+                        android:text="شركة التصنيع :"
+                        android:textColor="#dd000000"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewinfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="معلومات"
+                        android:textColor="#dd000000"
+                        android:textDirection="rtl"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:text="معلومات :"
+                        android:textColor="#dd000000"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/buttonhome"
+                android:layout_width="57dp"
+                android:layout_height="59dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="17dp"
+                android:background="@mipmap/home" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
